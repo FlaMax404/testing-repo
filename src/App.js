@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const App = () => {
-  // TODO ANAS in this file change the in between brackets after return to
-  /*
-        <div>
-        </div>
-    */
+  const [count, setCount] = useState(0);
+
+  const handleClick = () => {
+    setCount(count + 1);
+  };
 
   return (
     <div>
-                  <h1>(write anything but Hello World)</h1>
-                  <img src="picsum.photos/600/600" alt="photo"/>
+      <div>
+        <h1>{count}</h1>
+        <button onClick={handleClick}>click me!</button>
+      </div>
     </div>
   );
 };
