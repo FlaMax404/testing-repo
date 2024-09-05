@@ -4,7 +4,6 @@ const App = () => {
   // TODO ANAS in this file change the in between brackets after return to
   /*
         <div>
-
         </div>
     */
 
